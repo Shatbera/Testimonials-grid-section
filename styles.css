@@ -1,0 +1,120 @@
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: #c0d1eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.container {
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    gap: 30px;
+}
+
+.container-left,
+.container-right {
+    display: flex;
+}
+
+.container-left {
+    width: calc(75% - 15px);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.container-right {
+    width: calc(25% - 15px);
+}
+
+.item {
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.item-1,
+.item-2,
+.item-4 {
+    color: hsl(210, 46%, 95%);
+}
+
+.item-3,
+.item-5 {
+    color: hsl(219, 29%, 14%);
+}
+
+.item-1 {
+    width: calc(60% - 15px);
+    background-color: hsl(263, 55%, 52%);
+}
+
+.item-2 {
+    width: calc(40% - 15px);
+    background-color: hsl(217, 19%, 35%);
+}
+
+.item-3 {
+    width: calc(40% - 15px);
+    background-color: white;
+}
+
+.item-4 {
+    width: calc(60% - 15px);
+    background-color: hsl(219, 29%, 14%);
+}
+
+.item-5 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.profile {
+    display: flex;
+    gap: 30px;
+}
+
+.profile-picture img {
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 81%);
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+p {
+    opacity: 0.7;
+}
+
+.item>p {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1440px)
+{
+    .item{
+        width: 100% !important;
+    }
+
+    .container, .container-left, .container-right{
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: auto;
+    }
+}
